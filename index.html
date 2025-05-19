@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultura do Interior - Campo e Cidade</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Site sobre a cultura das cidades do interior e sua relação com o campo">
+</head>
+<body>
+    <header id="main-header">
+        <div class="container">
+            <h1>Cultura do Interior</h1>
+            <p>Conectando o campo e a cidade</p>
+        </div>
+    </header>
+
+    <nav id="main-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#tradicoes">Tradições</a></li>
+                <li><a href="#culinaria">Culinária</a></li>
+                <li><a href="#festas">Festas</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="sobre" class="section">
+        <div class="container">
+            <h2>Sobre a Cultura do Interior</h2>
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <p>A cultura das cidades do interior brasileiro é um rico mosaico de cores cheiros e sabores, onde a vida pulsa a cada estante um aranha ceu  tradições que unem o campo e a cidade. Nas pequenas cidades, ainda é possível perceber a forte influência da vida rural no cotidiano urbano.</p>
+                    <p>Este site busca mostrar como essas duas realidades se complementam, mantendo vivas tradições que muitas vezes se perdem nos grandes centros urbanos.</p>
+                </div>
+                <div class="image-content">
+                    <img src="caminho-para-sua-imagem.jpg" alt="Paisagem típica do interior com campo e cidade" class="responsive-img">
+                    <p class="img-caption">Imagem criada por [Seu Nome] utilizando [ferramenta usada]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tradicoes" class="section dark-bg">
+        <div class="container">
+            <h2>Tradições do Campo na Cidade</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Festa do Peão de Boiadeiro</h3>
+                    <p>Evento que traz para a cidade as tradições dos peões do campo, com montaria em touros e shows de música sertaneja.</p>
+                </div>
+                <div class="card">
+                    <h3>Feira Livre</h3>
+                    <p>Onde produtores rurais trazem seus produtos frescos diretamente para os moradores da cidade, mantendo viva uma tradição centenária.</p>
+                </div>
+                <div class="card">
+                    <h3>Rodeios</h3>
+                    <p>Competições que celebram as habilidades dos trabalhadores rurais, agora como entretenimento urbano.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="culinaria" class="section">
+        <div class="container">
+            <h2>Culinária: Do Campo para a Mesa</h2>
+            <p>A comida típica do interior é uma fusão dos ingredientes frescos do campo com as influências urbanas:</p>
+            
+            <form class="culinaria-form">
+                <label for="prato-favorito">Qual seu prato típico favorito?</label>
+                <select id="prato-favorito" name="prato-favorito">
+                    <option value="">Selecione um prato</option>
+                    <option value="feijao-tropeiro">Feijão Tropeiro</option>
+                    <option value="leitao-pururuca">Leitão à Pururuca</option>
+                    <option value="pao-de-queijo">Pão de Queijo</option>
+                    <option value="arroz-carreteiro">Arroz Carreteiro</option>
+                </select>
+                
+                <label for="experiencia">Conte sua experiência com a culinária do interior:</label>
+                <textarea id="experiencia" name="experiencia" rows="4"></textarea>
+                
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="festas" class="section dark-bg">
+        <div class="container">
+            <h2>Festas Tradicionais</h2>
+            <div class="festas-grid">
+                <div class="festa-item">
+                    <h3>Festa do Divino</h3>
+                    <p>Celebração religiosa com influências rurais, onde a comunidade se une para festejar.</p>
+                    <button class="btn festa-btn">Saiba mais</button>
+                </div>
+                <div class="festa-item">
+                    <h3>Festa Junina</h3>
+                    <p>A mais famosa festa do interior, com comidas típicas, danças e fogueiras.</p>
+                    <button class="btn festa-btn">Saiba mais</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <p>Tem histórias ou tradições do interior para compartilhar? Fale conosco!</p>
+            
+            <form class="contato-form">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <footer id="main-footer">
+        <div class="container">
+            <p>&copy; 2023 Cultura do Interior - Todos os direitos reservados</p>
+            <p>Conteúdo textual desenvolvido por [Seu Nome] baseado em pesquisas e vivências pessoais.</p>
+            <p>Imagens criadas por [Seu Nome] utilizando [ferramentas usadas].</p>
+            <button id="acessibilidade" class="btn acess-btn">Modo Alto Contraste</button>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

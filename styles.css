@@ -1,0 +1,336 @@
+/* Variáveis CSS */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --light-color: #ecf0f1;
+    --dark-color: #2c3e50;
+    --text-color: #333;
+    --text-light: #fff;
+    --font-main: 'Arial', sans-serif;
+    --font-size-base: 16px;
+    --spacing: 8px;
+    --border-radius: 4px;
+}
+
+/* Reset e Estilos Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    font-size: var(--font-size-base);
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: var(--light-color);
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 calc(var(--spacing) * 2);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: calc(var(--spacing) * 2);
+    line-height: 1.2;
+}
+
+p {
+    margin-bottom: var(--spacing);
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header */
+#main-header {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: calc(var(--spacing) * 4) 0;
+    text-align: center;
+}
+
+#main-header h1 {
+    font-size: 2.5rem;
+}
+
+#main-header p {
+    font-size: 1.25rem;
+    opacity: 0.9;
+}
+
+/* Navigation */
+#main-nav {
+    background-color: var(--secondary-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+#main-nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+#main-nav li {
+    padding: calc(var(--spacing) * 2);
+}
+
+#main-nav a {
+    color: var(--text-light);
+    font-weight: bold;
+    padding: calc(var(--spacing) * 1.5) calc(var(--spacing) * 2);
+    transition: all 0.3s ease;
+}
+
+#main-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: var(--border-radius);
+}
+
+/* Sections */
+.section {
+    padding: calc(var(--spacing) * 6) 0;
+}
+
+.dark-bg {
+    background-color: var(--dark-color);
+    color: var(--text-light);
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: calc(var(--spacing) * 4);
+    position: relative;
+}
+
+.section h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: var(--accent-color);
+    margin: calc(var(--spacing) * 2) auto 0;
+}
+
+.dark-bg .section h2::after {
+    background-color: var(--secondary-color);
+}
+
+/* Content Wrapper */
+.content-wrapper {
+    display: flex;
+    gap: calc(var(--spacing) * 4);
+    align-items: center;
+    margin-bottom: calc(var(--spacing) * 4);
+}
+
+.text-content {
+    flex: 1;
+}
+
+.image-content {
+    flex: 1;
+    text-align: center;
+}
+
+.img-caption {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: var(--spacing);
+}
+
+.dark-bg .img-caption {
+    color: #aaa;
+}
+
+/* Cards */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: calc(var(--spacing) * 3);
+    margin-top: calc(var(--spacing) * 4);
+}
+
+.card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    padding: calc(var(--spacing) * 3);
+}
+
+.dark-bg .card {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--text-light);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Forms */
+.culinaria-form,
+.contato-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: calc(var(--spacing) * 3);
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dark-bg .culinaria-form,
+.dark-bg .contato-form {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.form-group {
+    margin-bottom: calc(var(--spacing) * 2);
+}
+
+label {
+    display: block;
+    margin-bottom: var(--spacing);
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: calc(var(--spacing) * 1.5);
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    font-family: var(--font-main);
+    font-size: var(--font-size-base);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: calc(var(--spacing) * 1.5) calc(var(--spacing) * 3);
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: var(--font-size-base);
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+.festa-btn {
+    background-color: var(--accent-color);
+    margin-top: calc(var(--spacing) * 2);
+}
+
+.festa-btn:hover {
+    background-color: #c0392b;
+}
+
+.acess-btn {
+    background-color: var(--dark-color);
+    margin-top: calc(var(--spacing) * 2);
+}
+
+.acess-btn:hover {
+    background-color: #1a252f;
+}
+
+/* Festas Grid */
+.festas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: calc(var(--spacing) * 3);
+    margin-top: calc(var(--spacing) * 4);
+}
+
+.festa-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: calc(var(--spacing) * 3);
+    border-radius: var(--border-radius);
+    text-align: center;
+}
+
+/* Footer */
+#main-footer {
+    background-color: var(--dark-color);
+    color: var(--text-light);
+    padding: calc(var(--spacing) * 4) 0;
+    text-align: center;
+}
+
+#main-footer p {
+    margin-bottom: var(--spacing);
+    font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+    
+    .text-content, .image-content {
+        flex: none;
+        width: 100%;
+    }
+    
+    #main-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .section {
+        padding: calc(var(--spacing) * 4) 0;
+    }
+}
+
+/* Modo Alto Contraste */
+.alto-contraste {
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --accent-color: #ff0;
+    --light-color: #000;
+    --dark-color: #000;
+    --text-color: #fff;
+    --text-light: #fff;
+    
+    background-color: #000;
+    color: #fff;
+}
+
+.alto-contraste a {
+    color: #ff0;
+}
+
+.alto-contraste .btn {
+    border: 2px solid #fff;
+}
