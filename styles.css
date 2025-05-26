@@ -1,11 +1,12 @@
 /* Variáveis CSS */
 :root {
     --primary-color: #2c3e50;
-    --secondary-color: #3498db;
+    --secondary-color: #313fb8;
     --accent-color: #e74c3c;
     --light-color: #ecf0f1;
-    --dark-color: #2c3e50;
-    --text-color: #333;
+    --dark-color:
+#2c3e50;
+    --text-color: #3c3844;
     --text-light: #fff;
     --font-main: 'Arial', sans-serif;
     --font-size-base: 16px;
